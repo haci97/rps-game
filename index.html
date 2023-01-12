@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="scoreboard">
+            <div class="playerscore__container">
+                <h2>Player Score</h2>
+                <h2 id="playerscore">0</h2>
+            </div>
+            <div class="round__container">
+                <h2>Round</h2>
+                <h2 id="round__count" value="0">0</h2>
+            </div>
+            <div class="cpuscore__container">
+                <h2>Computer Score</h2>
+                <h2 id="cpuscore">0</h2>
+            </div>
+        </header>
+        <main>
+            <div class="choices__container">
+
+                <div class="playerchoice__container">
+                    <div class="playerchoice">
+                        <i title="Rock" id="rock__player" class="far fa-hand-rock"></i>
+                        <i title="Paper" id="paper__player" class="far fa-hand-paper"></i>
+                        <i title="Scissors" id="scissors__player" class="far fa-hand-scissors"></i>
+                    </div>
+                    <h1 class="playerchoice__label">Player</h1>
+                </div>
+                <div class="cpuchoice__container">
+                    <div class="cpuchoice">
+                        <i id="rock__cpu" class="far fa-hand-rock"></i>
+                        <i id="paper__cpu" class="far fa-hand-paper"></i>
+                        <i id="scissors__cpu" class="far fa-hand-scissors"></i>
+                    </div>
+                    <h1 class="cpuchoice__label">Computer</h1>
+                </div>
+            </div>
+            <div class="playerchoices__container">
+                <div id="alert__window" class="alert__window">
+                    <div class="alert__window-text-container">
+                        <p id="alert__window-text" class="alert__window-text"></p>
+                    </div>
+                </div>
+                <div class="playerchoices">
+                    <i title="Rock" id="r" class="far fa-hand-rock"></i>
+                    <i title="Paper" id="p" class="far fa-hand-paper"></i>
+                    <i title="Scissors" id="s" class="far fa-hand-scissors"></i>
+                </div>
+                <h3 class="playerchoices__label">Pick your Hand</h3>
+            </div>
+        </main>
+        <footer>
+            <div class="game__titles">
+                <span>- ROSHAMBO -</span>
+                <span>Rock Paper Scissors</span>
+            </div>
+            <div class="copyline">
+                <span>&copy; 2021 by Haci</span>
+            </div>
+        </footer>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
+
